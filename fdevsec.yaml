@@ -3,3 +3,17 @@ version: v1
 id:
   org: 3c49599e-03c7-4ebe-843a-0cf9ab1bfbc7
   app: 0961fedf-ddc1-4996-a3c0-cb464e1171d6
+
+scanners: 
+  - sast 
+  - dast 
+  - secret 
+  - sca 
+  - iac 
+  - container
+  
+dast: 
+  url: http://k8s-default-dvwaalbi-d593165436-2032029421.us-east-1.elb.amazonaws.com// 
+  fortipentest_scanner: false #true|false 
+  full_scan: true #true|false
+  
